@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MyClassTest {
+public class MyClassTest {
 
     @Test
     void testMultiply() {

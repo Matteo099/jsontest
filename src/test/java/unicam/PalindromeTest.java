@@ -5,7 +5,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class PalindromeTest {
+public class PalindromeTest {
 
 
     @ParameterizedTest

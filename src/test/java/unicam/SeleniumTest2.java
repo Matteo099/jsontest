@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-class SeleniumTest2 {
+public class SeleniumTest2 {
 
     WebDriver driver;
 
