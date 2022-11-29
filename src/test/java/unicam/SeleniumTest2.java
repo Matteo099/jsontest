@@ -24,8 +24,8 @@ class SeleniumTest2 {
 
     @AfterEach
     void reset() {
-        //driver.close();
-        //driver.quit();
+        driver.close();
+        driver.quit();
     }
 
 

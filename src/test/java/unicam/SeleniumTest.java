@@ -21,8 +21,8 @@ class SeleniumTest {
 
     @AfterEach
     void reset() {
-        //driver.close();
-        //driver.quit();
+        driver.close();
+        driver.quit();
     }
 
     @Test
@@ -54,7 +54,7 @@ class SeleniumTest {
     void checkSPMSite() throws InterruptedException {
 
         String at = driver.getTitle();
-        String et = "SPM 2022";
+        String et = "PROS - PROcesses & Services lab | Computer Science division @Unicam";
 
         Thread.sleep(1000);
 

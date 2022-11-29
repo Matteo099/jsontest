@@ -9,7 +9,7 @@ class PalindromeTest {
 
 
     @ParameterizedTest
-    @ValueSource(strings={"pippo", "otto", "able was I ere I saw elba"})
+    @ValueSource(strings={"otto", "able was I ere I saw elba"})
     void isPalindrome(String candidate) {
         assertTrue(Palindrome.isPalindrome(candidate));
     }
