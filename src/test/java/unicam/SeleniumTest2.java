@@ -1,5 +1,6 @@
 package unicam;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class SeleniumTest2 {
 
@@ -14,10 +16,9 @@ public class SeleniumTest2 {
 
     @BeforeEach
     void setup() throws InterruptedException {
-        String projectPath = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", projectPath + "/drivers/chromedriver.exe");
-
-        driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        driver = new ChromeDriver(options);
         driver.get("http://localhost:8080/maenwebapp");
         Thread.sleep(2000);
     }

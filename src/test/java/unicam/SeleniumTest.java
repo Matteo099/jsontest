@@ -26,6 +26,7 @@ public class SeleniumTest {
     }
 
     @Test
+    @Disabled
     void checkProsSite() throws InterruptedException {
 
         String at = driver.getTitle();
@@ -39,6 +40,7 @@ public class SeleniumTest {
     }
 
     @Test
+    @Disabled
     void checkProdSiteSearch() throws InterruptedException {
         driver.findElement(By.className("toggle-search")).click();
         Thread.sleep(1000);
@@ -51,6 +53,7 @@ public class SeleniumTest {
     }
 
     @Test
+    @Disabled
     void checkSPMSite() throws InterruptedException {
 
         String at = driver.getTitle();
